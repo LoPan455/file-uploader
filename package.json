@@ -1,11 +1,12 @@
 {
-  "name": "new-angular-project",
+  "name": "Simple AWS S3 File Uploader",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
     "angular": "^1.6.3",
     "angular-route": "^1.6.3",
+    "aws-sdk": "^2.57.0",
     "body-parser": "^1.17.1",
     "bootstrap": "^3.3.7",
     "express": "^4.15.2",
