@@ -1,4 +1,4 @@
-<body ng-controller="UploadController">
+<body>
   <h2>File Upload</h2>
   <form action="https://sofa-apple-tree.s3.amazonaws.com/" method="post" enctype="multipart/form-data">
       <input type="hidden" name="key" value="uploads/${filename}">
@@ -8,7 +8,7 @@
       <input type="text"   name="x-amz-algorithm" value="AWS4-HMAC-SHA256" />
       <input type="text"   name="x-amz-credential" value="AKIAJD7MUGSNUZEG3X4A/20170525/us-east-2/s3/aws4_request" />
       <input type="text"   name="x-amz-date" value="20170525T00000000Z" />
-      <input type="hidden" name="policy" value="eyJleHBpcmF0aW9uIjogIjIwMTktMDEtMDFUMDA6MDA6MDBaIiwNCiAgImNvbmRpdGlvbnMiOiBbIA0KICAgIHsiYnVja2V0IjogInMzLWJ1Y2tldCJ9LCANCiAgICBbInN0YXJ0cy13aXRoIiwgIiRrZXkiLCAidXBsb2Fkcy8iXSwNCiAgICB7ImFjbCI6ICJwcml2YXRlIn0sDQogICAgeyJzdWNjZXNzX2FjdGlvbl9yZWRpcmVjdCI6ICJodHRwOi8vbG9jYWxob3N0LyJ9LA0KICAgIFsic3RhcnRzLXdpdGgiLCAiJENvbnRlbnQtVHlwZSIsICIiXSwNCiAgICBbImNvbnRlbnQtbGVuZ3RoLXJhbmdlIiwgMCwgMTA0ODU3Nl0NCiAgXQ0KfQ==">
+      <input type="text" name="policy" value={{self.policy}}>
       <input type="hidden" name="signature" value="f3da7151dde3d6fbdb0c17de0ba279cda7c55741b114acad874b0e255b02a1d1">
       <input type="hidden" name="Content-Type" value="image/jpeg">
 
