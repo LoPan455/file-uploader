@@ -1,5 +1,5 @@
 {
-  "name": "Simple AWS S3 File Uploader",
+  "name": "S3-file-uploader",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

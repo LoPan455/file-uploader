@@ -3,6 +3,13 @@ var app = express();
 var path = require('path');
 var router = require('./server/routes/routes.js')
 
+
+var b = new Buffer('JavaScrtipt');
+var s = b.toString('base64');
+console.log('the encoded string is: ',s);
+
+
+
 app.use('/inboundURLbase',router)
 
 // Serve back static files
