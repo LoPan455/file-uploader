@@ -2,11 +2,9 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var router = require('./server/routes/routes.js')
+var policy = require('./server/modules/s3-policy-signing');
 
-
-var b = new Buffer('JavaScrtipt');
-var s = b.toString('base64');
-console.log('the encoded string is: ',s);
+console.log(policy.policy);
 
 
 
