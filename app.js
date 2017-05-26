@@ -4,7 +4,7 @@ var path = require('path');
 var router = require('./server/routes/routes.js')
 var policy = require('./server/modules/s3-policy-signing');
 
-console.log(policy.policy);
+// console.log(policy.policy);
 
 
 
